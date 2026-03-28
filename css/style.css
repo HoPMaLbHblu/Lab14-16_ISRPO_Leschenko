@@ -6,7 +6,20 @@
 
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    flex: 1;
+}
+
 
 header {
     background: #222;
@@ -41,4 +54,55 @@ nav a {
 
 nav a:hover {
     color: orange;
+}
+
+.hero {
+
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+
+    background: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    padding: 30px;
+
+    width: 600px;
+}
+
+.hero-content h1 {
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+/* button */
+
+.hero-btn {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: orange;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: darkorange;
 }
