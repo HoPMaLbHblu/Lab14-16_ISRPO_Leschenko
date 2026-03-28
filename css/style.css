@@ -153,12 +153,27 @@ nav a:hover {
     color: white;
     text-decoration: none;
     transition: 0.3s;
+
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-card a:hover {
     background: orange;
+}
+
+.product-card a,
+.hero-btn,
+button {
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: orange;
+    color: white;
 }
